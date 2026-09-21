@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Exercise the exact packaged cscroll wrapper on the real TTY/DRM backend. The
 # three Mesa paths begin poisoned; only the wrapper can replace them with its
 # Nix Mesa closure before wlroots creates the GBM allocator.

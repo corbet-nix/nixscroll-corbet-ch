@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Arch/CachyOS integration for cscroll.
 #
 # The compositor itself is the nixscroll package, never the AUR's independent

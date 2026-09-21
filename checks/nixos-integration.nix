@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Evaluate the NixOS module both with and without nixdesktop's optional
 # compositor registry. Installation must remain standalone, while composition
 # registers the exact same complete Scroll descriptor as system-manager.

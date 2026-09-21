@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # home/scroll.nix — homeManagerModules.scroll: generates ~/.config/scroll/config from
 # structured options (namespace: programs.scroll), matching scroll's own upstream config
 # syntax (see `man 5 scroll`, `man 5 scroll-input`, `man 5 scroll-output`, `man 5 scroll-bar`).
@@ -507,7 +508,7 @@ let
   # writing sway/scroll `exec` lines directly.
   #
   # Read through `lib.probeFact` (consumed from
-  # [nixhost](https://github.com/julian-corbet/nixhost-corbet-ch)'s `lib/facts.nix` via this
+  # [nixhost](https://github.com/corbet-nix/nixhost-corbet-ch)'s `lib/facts.nix` via this
   # repo's own `nixhost` flake input -- see flake.nix, and this file's own outer `{ probeFact }:`
   # argument) rather than a bare `config.nixdesktop.startup or [ ]`: a host running scroll with NO
   # nixdesktop module composed sees an empty list and renders nothing extra, never an evaluation

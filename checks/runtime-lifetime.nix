@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Exercise the real compositor with ASan. Source regressions live in cscroll;
 # this repository owns the build recipe and makes them a required flake check.
 { pkgs, scrollUnwrapped }:

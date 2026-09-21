@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/config-accepted.nix — feed this module's own output to the real scroll binary.
 #
 # WHY THIS EXISTS. Every other check here evaluates Nix and inspects the result, which can only ever

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/layout-outputs.nix — evaluates home/scroll.nix for real and proves the
 # nixdisplay.layouts/nixdisplay.monitors/nixdesktop.sessions translation this repo owns: transform
 # inversion (the single fact most likely to be silently wrong, and invisible from IPC on this exact

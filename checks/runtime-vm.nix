@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Boot an isolated NixOS VM and exercise the packaged cscroll runtime. Every
 # IPC command is bound to a socket proven to have appeared after this VM's own
 # compositor started; the harness never relies on sway/scroll socket fallback.

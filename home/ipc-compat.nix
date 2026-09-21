@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # home/ipc-compat.nix — integrate cscroll's strict-Sway IPC runtime helper.
 #
 # This module owns Nix integration only. The proxy implementation, layout-schema

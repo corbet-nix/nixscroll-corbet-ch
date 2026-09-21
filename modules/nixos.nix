@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # modules/nixos.nix — nixosModules.scroll: the system-install half of this repo's split (see
 # flake.nix and README's "The split"). Config generation (~/.config/scroll/config) is a
 # separate concern, handled entirely by homeManagerModules.scroll — this module never touches it.

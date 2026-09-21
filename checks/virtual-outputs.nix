@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/virtual-outputs.nix — evaluates home/scroll.nix for real and proves the
 # nixdesktop.sessions.<name>.virtualOutputs -> scroll's create_output/output-mode IPC translation
 # (home/scroll.nix's own `virtualOutputLines`): the HEADLESS-<N+1> numbering offset scroll's own

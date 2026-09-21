@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 {
   description = "nixscroll — declarative config generation for scroll (a scrolling/PaperWM-style fork of sway), plus the packaging and system wiring it needs since it isn't in nixpkgs";
 
@@ -23,7 +24,7 @@
       inputs.scroll-stable.follows = "cscroll";
     };
 
-    # nixhost IS an input, for exactly one thing: `lib.probeFact` (github:julian-corbet/
+    # nixhost IS an input, for exactly one thing: `lib.probeFact` (github:corbet-nix/
     # nixhost-corbet-ch, `lib/facts.nix`) -- the shared, plain-function fix for the
     # cross-namespace defensive-read defect class `home/scroll.nix`'s own
     # `nixdesktopStartupProbe` leans on (see nixhost's own `lib/facts.nix` header).
@@ -33,7 +34,7 @@
     # read: that stays a defensive, zero-flake-dependency probe -- only the `probeFact`
     # MECHANISM is consumed from nixhost.
     nixhost = {
-      url = "github:julian-corbet/nixhost-corbet-ch";
+      url = "github:corbet-nix/nixhost-corbet-ch";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

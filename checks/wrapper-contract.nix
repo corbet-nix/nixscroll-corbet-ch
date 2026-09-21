@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Inspect the final executable wrapper that system-manager launches on Arch.
 # Metadata alone did not catch a missing GBM backend path: the compositor
 # reached Mesa, then failed its allocator because /run/opengl-driver exists on

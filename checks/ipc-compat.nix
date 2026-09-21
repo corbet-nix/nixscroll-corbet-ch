@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Evaluate the IPC integration module for real. Runtime protocol behaviour is
 # tested in cscroll; this check enforces the product boundary on the Nix side.
 { pkgs, ipcCompatModule, scrollPackage, lib ? pkgs.lib }:

@@ -230,15 +230,15 @@ binary.
 ## Related projects
 
 nixscroll is one of several small, independently-usable open-source projects sharing a common
-design system: [nixdesktop](https://github.com/julian-corbet/nixdesktop-corbet-ch) (a
-a compositor-neutral CPU-rendered desktop policy layer) and [nixremote](https://github.com/julian-corbet/nixremote-corbet-ch)
+design system: [nixdesktop](https://github.com/corbet-nix/nixdesktop-corbet-ch) (a
+a compositor-neutral CPU-rendered desktop policy layer) and [nixremote](https://github.com/corbet-nix/nixremote-corbet-ch)
 (declarative cross-machine Wayland app forwarding) cover adjacent ground on the same
 Wayland-on-Nix theme; nixscroll's own niche is scroll specifically, for anyone who wants its
 scrolling layout instead of a grid-based compositor.
 
-## License
+## Licence
 
-[MIT License](LICENSE) © 2026 Julian Corbet
+Outbound licence is `MIT OR Apache-2.0`. See `LICENSE-MIT` and `LICENSE-APACHE`; every source file carries `SPDX-License-Identifier: MIT OR Apache-2.0`.
 
 ## Idle and lock: not here, by design
 
@@ -261,18 +261,18 @@ programs.scroll.binds."$mod+Alt+l" =
   "exec ${config.nixdesktop.session.idleAndLock.lockCommand}";
 ```
 
-[nixdesktop]: https://github.com/julian-corbet/nixdesktop-corbet-ch
+[nixdesktop]: https://github.com/corbet-nix/nixdesktop-corbet-ch
 
 ## Wiring nixdesktop's shared startup list
 
-[nixdesktop](https://github.com/julian-corbet/nixdesktop-corbet-ch) is the compositor-neutral
+[nixdesktop](https://github.com/corbet-nix/nixdesktop-corbet-ch) is the compositor-neutral
 policy layer. Its shared components — a notification daemon, a widget shell — append the commands
 they need to a neutral `nixdesktop.startup` list rather than writing into any compositor's
 namespace.
 
 **This module splices that list for you.** Nothing to wire: `home/scroll.nix` reads
 `config.nixdesktop.startup` through `lib.probeFact` (consumed from
-[nixhost](https://github.com/julian-corbet/nixhost-corbet-ch)'s own `lib/facts.nix` via this
+[nixhost](https://github.com/corbet-nix/nixhost-corbet-ch)'s own `lib/facts.nix` via this
 repo's own `nixhost` flake input) and emits each entry
 as its own `exec` line, ordered ahead of anything you put in `programs.scroll.startup` — contract
 entries are session components a host's own commands may expect to be running already.
@@ -307,9 +307,9 @@ contract to its own syntax, which is the point of the contract being neutral.)
 
 ## Wiring nixdisplay's monitors, layouts and nixdesktop's device permission
 
-[nixdisplay](https://github.com/julian-corbet/nixdisplay-corbet-ch) owns a fleet-wide monitor
+[nixdisplay](https://github.com/corbet-nix/nixdisplay-corbet-ch) owns a fleet-wide monitor
 registry (`nixdisplay.monitors`, keyed by EDID identity — a panel roams between hosts) and named
-output arrangements (`nixdisplay.layouts`). [nixdesktop](https://github.com/julian-corbet/nixdesktop-corbet-ch)
+output arrangements (`nixdisplay.layouts`). [nixdesktop](https://github.com/corbet-nix/nixdesktop-corbet-ch)
 owns per-session device permission (`nixdesktop.sessions.<name>.permittedDevices`, the complement
 of which is derived for niri — scroll needs only the allow-side). `programs.scroll.nixdesktop`
 consumes all three, the same `lib.probeFact` way `startup` above does: never a flake input on

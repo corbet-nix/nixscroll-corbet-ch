@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Evaluate the system-manager integration. The cscroll manifest is the only
 # package list: enabling nixscroll registers the compositor, materializes every
 # required external component, and installs the desktop-specific portal route.
