@@ -1,6 +1,6 @@
 # nixscroll
 
-Declarative config generation for [cscroll](https://github.com/corbet-labs/cscroll), a deliberately
+Declarative config generation for [cscroll](https://github.com/corbet-foss/cscroll), a deliberately
 close downstream of [scroll](https://github.com/dawsers/scroll) — a fork of
 [sway](https://github.com/swaywm/sway) with a scrolling, PaperWM-style tiling layout — plus the
 packaging and system wiring it needs since Scroll is not in nixpkgs. Four outputs:

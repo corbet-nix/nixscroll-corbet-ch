@@ -10,7 +10,7 @@
     # module. The public source is pinned in flake.lock; no machine-local source
     # path or independent upstream Scroll revision may bypass this boundary.
     cscroll = {
-      url = "github:corbet-labs/cscroll";
+      url = "github:corbet-foss/cscroll";
       flake = false;
     };
 

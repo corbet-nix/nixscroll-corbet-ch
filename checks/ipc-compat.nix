@@ -83,7 +83,7 @@ let
       has flakeSource ''inputs.scroll-git.follows = "cscroll";''
       && has flakeSource ''inputs.scroll-stable.follows = "cscroll";'';
     "the committed cscroll input is remote and non-flake" =
-      has flakeSource ''url = "github:corbet-labs/cscroll";''
+      has flakeSource ''url = "github:corbet-foss/cscroll";''
       && has flakeSource "flake = false;"
       && !(has flakeSource "path:/home/");
     "Python is available only to patch the installed helper shebang" =

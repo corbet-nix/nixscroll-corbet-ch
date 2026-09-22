@@ -5,13 +5,13 @@
       "locked": {
         "lastModified": 1789832999,
         "narHash": "sha256-4gwDokalPQ82VGJFT/LvALL7R56RZ/RPU+wKxCgD4BI=",
-        "owner": "corbet-labs",
+        "owner": "corbet-foss",
         "repo": "cscroll",
         "rev": "4e07362f864d6f7ffc8edaf653f7dce5fcf1cfb8",
         "type": "github"
       },
       "original": {
-        "owner": "corbet-labs",
+        "owner": "corbet-foss",
         "repo": "cscroll",
         "type": "github"
       }
