@@ -3,15 +3,16 @@
     "cscroll": {
       "flake": false,
       "locked": {
-        "lastModified": 1789832999,
-        "narHash": "sha256-4gwDokalPQ82VGJFT/LvALL7R56RZ/RPU+wKxCgD4BI=",
+        "lastModified": 1790632650,
+        "narHash": "sha256-P6PwUzANgWcRafaHn6RXCg8wdqeT0C6qnjSxumyWREY=",
         "owner": "corbet-foss",
         "repo": "cscroll",
-        "rev": "4e07362f864d6f7ffc8edaf653f7dce5fcf1cfb8",
+        "rev": "2a778ac41dc7d06a542a7ec40b2b0704c24017f4",
         "type": "github"
       },
       "original": {
         "owner": "corbet-foss",
+        "ref": "main",
         "repo": "cscroll",
         "type": "github"
       }
